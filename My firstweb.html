@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My first website.codem</title>
+    <link rel="stylesheet" href="./web.css">
+    <link rel="javascript" href="./web.js">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+
+</head>
+<body>
+    
+    <div class="countr"><h1>My Country</h1>
+    <p>My country is The Democratic Republic of The Congo, its located in cental Africa region, its the second largestAfrican country after Algeria, its well known for mineral resources as the African richest country with its mineral resources, it share land borders with nine Aafrican countries, it has the second rainforest in the world, Congo forest after the Amazon in Brazilia.</p>
+    <a href="https://en.wikipedia.org/wiki/Democratic_Republic_of_the_Congo">More about The Democratic Republic of_the Congo</a>
+    
+    
+    
+    <h3>Bodering countries</h3>
+    <ul>
+        <li>Republic of Congo</li>
+       <li> Cental Africa republic</li>
+        <li>Angola</li>
+        <li>Zambia</li>
+        <li>Tanzania</li>
+        <li>Burundi</li>
+        <li>Rwanda</li>
+        <li>Uganda</li>
+        <li>South Sudan</li>
+    </ul>
+    <h3>Places to visit in Congo</h3>
+
+    <div div="table">
+      <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Add Data to Table</title>
+</head>
+<body>
+
+<table id="myTable" class="table">
+  <thead>
+    <tr>
+      <th scope="col">Popular city</th>
+      <th scope="col">Place to visit</th>
+      <th scope="col">Tourist information</th>
+      <th scope="col">Contact person</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Goma</td>
+      <td>Volcan</td>
+      <td>Delphin</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Kin</td>
+      <td>Musee</td>
+      <td>Delphin</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td colspan="2">Cathedrale</td>
+      <td>Delphin</td>
+    </tr>
+  </tbody>
+</table>
+
+<button id="addDataBtn">Add Data</button>
+
+<script>
+document.getElementById('addDataBtn').addEventListener('click', function() {
+  addDataToTable();
+});
+
+function addDataToTable() {
+  var table = document.getElementById('myTable').getElementsByTagName('tbody')[0];
+  var newRow = table.insertRow(table.rows.length);
+
+  var rowData = ['4', 'New City', 'New Place', 'New Contact'];
+
+  for (var i = 0; i < rowData.length; i++) {
+    var cell = newRow.insertCell(i);
+    cell.innerHTML = rowData[i];
+  }
+}
+</script>
+
+
+
+    
+        <p><strong>What city would you like to visit in DRC soon? we have beautful lake is most of cities, national parks where you will see diffent type and rare wild animals, such as Okapi, Gorilla, Elephant, Lion...</strong>
+        <br>
+    <form>
+        <label for="cities">Select a city:</label><br>
+        <select name="cities" id=cities">
+            <option value="Kinshasa">Kinshasa</option>
+            <option valu="lubumbashi">Lubumbashi</option>
+            <option value="bukavu">Bukavu</option>
+            <option value="Goma">Goma</option>
+            <option value="kindu">Kindu</option>
+            <option value="Mbujima">Mbujimai</option>
+            <option value="matadi">Matadi</option>
+        </select>
+        <br>
+        <label for="parc">Type a national park to visit</label><br>
+        <input type="text"><br>
+        
+        <label for="animals">Tick the type of animals</label><br>
+        
+        <option value="Okapi">Okapi</option>
+        <input type="checkbox">
+        <option value="zebra">Zebra</option>
+        <input type="checkbox">
+        <option value="gorilla">Gorilla</option>
+        <input type="checkbox"><br>
+
+        
+        <label foe="question">Will you come alone or accompanied</label><br>
+        
+        <input type="radio" id="alone" name="Will you come" value="Alone">
+        <label for="alone">Alone</label><br>
+        <input type="radio" name="Will you come" value="Accompanied">
+        <label for="accompanied" id>Accompanied</label><br>
+        
+        <br>
+       <label for="submit">Please submit the form</label> 
+       <br>
+        <input type="submit" value="submit">
+
+        <div class="input-group mb-3">
+            <span class="input-group-text" id="basic-addon1"></span>
+            <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+          </div>
+          
+          <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+            <span class="input-group-text" id="basic-addon2"></span>
+          </div>
+          
+          <div class="mb-3">
+            <label for="basic-url" class="form-label"></label>
+            <div class="input-group">
+              <span class="input-group-text" id="basic-addon3"></span>
+              <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3 basic-addon4">
+            </div>
+            <div class="form-text" id="basic-addon4"></div>
+          </div>
+          
+          <div class="input-group mb-3">
+            <span class="input-group-text"></span>
+            <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+            <span class="input-group-text"></span>
+          </div>
+
+          <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="full name" aria-label="Username">
+            <span class="input-group-text"></span>
+            <input type="text" class="form-control" placeholder="Name of accompanied person if any" aria-label="Server">
+          </div>
+          
+          <div class="input-group">
+            <span class="input-group-text"></span>
+            <textarea class="form-control" aria-label="With textarea"></textarea>
+          </div>
+
+    </form>
+    
+        
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script> 
+</body>
+</html>
